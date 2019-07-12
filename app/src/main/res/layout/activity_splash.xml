@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/splash_bg">
+        <uilayouttest.example.com.bigtask.Views.CircleImageView
+            android:id="@+id/civ_user_portrait"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="300dp"
+            android:src="@drawable/logo"
+            app:civ_border_color="#fffcfc"
+            app:civ_border_width="2dp" />
+        <TextView
+            android:text="诗意地栖居，佛系地生活"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="400dp"
+            />
+
+        <uilayouttest.example.com.bigtask.Views.SplashView
+            android:id="@+id/mSplashViewid"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

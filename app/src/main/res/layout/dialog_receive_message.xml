@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="35px"
+            android:background="@drawable/ic_tmgj"
+            />
+
+        <TextView
+            android:layout_marginLeft="35px"
+            android:text="收到一条消息"
+            android:layout_marginTop="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="50px" />
+
+        <TextView
+            android:layout_marginTop="30px"
+            android:id="@+id/mOffTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:textColor="@color/red"
+            android:layout_marginLeft="100px"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        />
+
+
+
+
+
+</LinearLayout>

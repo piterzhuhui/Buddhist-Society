@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@mipmap/underline"
+    android:orientation="horizontal">
+
+
+    <!--<ImageView-->
+        <!--android:gravity="bottom"-->
+        <!--android:src="@mipmap/underline"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp" />-->
+
+
+    <uilayouttest.example.com.bigtask.Views.CircleImageView
+        android:id="@+id/iv_friends_list_portrait"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/cat" />
+
+    <TextView
+        android:id="@+id/tv_friends_list_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:textSize="15dp" />
+
+
+
+
+</LinearLayout>

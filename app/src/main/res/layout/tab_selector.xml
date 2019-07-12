@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item android:state_checked="true" ><!-- 选中状态 -->
+        <layer-list >
+            <item >
+                <shape android:shape="rectangle">
+                    <stroke android:width="5dp"  android:color="#ff0000"/>
+                </shape>
+            </item>
+            <item  android:bottom="5dp" >
+                <shape android:shape="rectangle" >
+                    <solid android:textColor="#98ddc1"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item ><!-- 默认状态 -->
+        <shape >
+            <solid  android:textColor="#FAFAFA"/>
+        </shape>
+    </item>
+
+
+
+</selector>

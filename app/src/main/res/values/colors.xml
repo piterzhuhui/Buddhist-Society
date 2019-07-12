@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="windowBackground">#f2f2f2</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="color_green">#53b30e</color>
+    <color name="blue_light">#2BA7FF</color>
+    <color name="colorApp">#000</color>
+    <color name="red">#ec0c15</color>
+    <color name="hhh">#ec0c</color>
+
+
+    <!--起始页-->
+    <array name="splash_circle_colors">
+        <item>@color/blue_light</item>
+        <item>@color/color_green</item>
+        <item>@color/red</item>
+        <item>@color/colorAccent</item>
+        <item>@color/hhh</item>
+        <item>@color/colorPrimaryDark</item>
+    </array>
+
+    <!--新加的login需要的-->
+
+    <color name="color_999999">#999999</color>
+
+    <color name="color_eeeeee">#eeeeee</color>
+
+    <color name="color_ffffff">#ffffff</color>
+
+    <color name="color_c61a04">#c61a04</color>
+
+    <color name="color_cccccc">#cccccc</color>
+
+    <color name="color_d81e06">#d81e06</color>
+
+    <color name="color_b0b8b2">#b0b8b2</color>
+
+    <color name="color_333333">#333333</color>
+</resources>

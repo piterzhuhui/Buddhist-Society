@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+
+<!--<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:id="@+id/drawer_layout"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+<!--&lt;!&ndash; The main content view &ndash;&gt;-->
+
+
+<!--<FrameLayout--><!--android:id="@+id/content_frame"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent" >-->
+
+
+<!--</FrameLayout>-->
+
+<!--&lt;!&ndash; The navigation drawer &ndash;&gt;-->
+
+<!--<TextView--><!--android:id="@+id/tex_view"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_gravity="start"--><!--android:text="This is menu"--><!--android:textSize="30sp"--><!--android:background="#FFF"--><!--/>-->
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:padding="15dp"--><!--android:orientation="vertical"--><!--android:layout_height="match_parent">-->
+
+
+<!--<com.youth.banner.Banner--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:id="@+id/banner"--><!--android:layout_width="match_parent"--><!--android:layout_height="150dp"--><!--/>-->
+
+<!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="精品推荐"--><!--/>--><!--</LinearLayout>--><!--</android.support.v4.widget.DrawerLayout>-->
+
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Toolbar-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@mipmap/title_bar_bg"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="首页"
+                    android:textSize="20sp" />
+
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <!--主体内容-->
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycler_view"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent" />-->
+
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/base_swipe_refresh_widget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp" />
+
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="略露露" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="hhh" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" -->
+                    <!--android:src="@drawable/touxiang"-->
+                    <!--/>-->
+
+                <include layout="@layout/home_viewpager" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="lll"-->
+                    <!--android:textSize="100dp"-->
+                    <!--android:textColor="@color/color_green"-->
+                    <!--/>-->
+
+            </LinearLayout>
+
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/base_RecyclerView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/windowBackground"-->
+                <!--android:scrollbars="vertical" />-->
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--侧边内容-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@mipmap/card_bg"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
+
+
+</android.support.v4.widget.DrawerLayout>
+
